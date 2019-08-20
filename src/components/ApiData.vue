@@ -1,4 +1,3 @@
-
 // I added the tags below to import files.
 <style src="./style.css"></style>
 <template src="./template.html"></template>
@@ -7,18 +6,18 @@
 
 <script>
 
-  function returnSomething() {
+  function returnSomething2() {
 
   return `This is something.`
 
   }
 
   export default {
-    name: 'HelloWorld',
+    name: 'ApiData',
     data() {
       return {
-      otherMsg: 'This is another message.',
-      apiData1: returnSomething(),
+      otherMsg2: 'This is another message.',
+      apiData12: returnSomething2(),
       };
     },
   props: {
