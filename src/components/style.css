@@ -1,14 +1,24 @@
-h3 {
-    margin: 40px 0 0;
+
+  :root {
+    font: 1rem/1.175 "BlinkMacSystemFont", -apple-system, "Roboto", sans-serif;
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
+  
+  #app {
+    display: flex;
+    justify-content: center; align-items: center;
+    width: 100vw; height: 100vh;
+    font-weight: 80; font-size: 1rem;
+    color: rgb(92, 66, 2);
+    user-select: none;
   }
-  li {
-    display: inline-block;
-    margin: 0 10px;
+  
+  img {
+    width: 6rem; height: 6rem;
+    vertical-align: calc(-0.12109375em);
   }
-  a {
-    color: green;
-  }
+  
+  table, th, td {
+        padding: 10px;
+        border: 1px solid black; 
+        border-collapse: collapse;
+        }

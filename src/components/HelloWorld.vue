@@ -13,6 +13,21 @@ return `This is something.`
 
 }
 
+
+export default {
+  name: 'HelloWorld',
+  data() {
+    return {
+    otherMsg: 'This is another message.',
+    apiData1: returnSomething(),
+    apiData2: mockData,
+    };
+  },
+props: {
+    msg: String
+  }
+}
+
 var mockData= [
     {
         "RouteId": 10284626,
@@ -76,21 +91,6 @@ var mockData= [
     },
 
 ];
-
-export default {
-  name: 'HelloWorld',
-  data() {
-    return {
-    otherMsg: 'This is another message.',
-    apiData1: returnSomething(),
-    apiData2: mockData,
-    };
-  },
-props: {
-    msg: String
-  }
-}
-
 
 
 </script>
