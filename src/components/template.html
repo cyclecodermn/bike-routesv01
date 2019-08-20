@@ -1,4 +1,4 @@
-    <div id="app" style="width:80%">
+    <div style="width:80%">
       <center>
           <div class="card mt-5">
               <h1 class="card-header">TCBC Bike Routes</h1>
@@ -11,7 +11,7 @@
                       <th>Elev Gain</th>
                   </thead>
                   <tbody>
-                      <tr v-for="route in apiData2">
+                      <tr v-for="route in info" :key="route.RouteId">
                           <td><a :href="`${route.RouteURL}`">{{route.RouteName}}</a></td>
                           
                           <td>{{route.RouteCity}}</td>
