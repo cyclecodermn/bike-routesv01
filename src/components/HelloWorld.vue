@@ -5,31 +5,35 @@
 
 // More imports are in the main.js file
 <script>
+import axios from "axios";
+import { get } from "http";
 // import Axios from "https://unpkg.com/axios/dist/axios.min.js";
 var url = "http://localhost:56150/GetByRowRange/5/10/";
+//var url = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR";
 
 export default {
   name: "HelloWorld",
   info: [],
   data: function() {
-    return { info: getData() };
+    return {
+      info: []
+    };
   },
-  mounted: function() {
-    // this.info = getData();
+  created: function() {
+    this.info = getData();
   }
 };
 
 function getData() {
   window.setTimeout(function() {}, 3000);
-  let info = [];
-  axios
+  let data = [];
+  debugger;
+  return axios
     .get(url)
     .then(response => {
-      info = response;
+      return response.data;
     })
     .catch(function() {});
-  console.log(info);
-  return info;
 }
 
 var mockData = [
