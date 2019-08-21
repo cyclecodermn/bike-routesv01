@@ -11,9 +11,10 @@
           <th>Elev Gain</th>
         </thead>
         <tbody>
-          <tr v-for="route in info">
-            <td>{{ route }}</td>
-            <!-- <td><a :href="`${route.RouteURL}`">{{route.RouteName}}</a></td> -->
+          <tr v-for="route in results">
+            <td>
+              <a :href="`${route.RouteURL}`">{{ route.RouteName }}</a>
+            </td>
 
             <td>{{ route.RouteCity }}</td>
             <td>{{ route.RouteState }}</td>

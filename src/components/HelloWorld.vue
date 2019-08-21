@@ -11,18 +11,47 @@ import { get } from "http";
 var url = "http://localhost:56150/GetByRowRange/5/10/";
 //var url = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR";
 
+// export default {
+//   name: "HelloWorld",
+//   info: [],
+//   data: function() {
+//     return {
+//       info: []
+//     };
+//   },
+//   created: function() {
+//     this.info = getData();
+//   }
+// };
+
 export default {
   name: "HelloWorld",
   info: [],
   data: function() {
     return {
-      info: []
+      results: []
     };
   },
-  created: function() {
-    this.info = getData();
+
+  mounted() {
+    axios.get(url).then(response => {
+      this.results = response.data;
+    });
   }
 };
+
+// const vm = new Vue({
+//   el: "#app",
+//   data: {
+//     results: []
+//   },
+
+//   mounted() {
+//     axios.get(url).then(response => {
+//       this.results = response.data;
+//     });
+//   }
+// });
 
 function getData() {
   window.setTimeout(function() {}, 3000);
