@@ -5,7 +5,6 @@
 
 // More imports are in the main.js file
 <script>
-<<<<<<< HEAD
 import axios from "axios";
 import { get } from "http";
 // import Axios from "https://unpkg.com/axios/dist/axios.min.js";
@@ -24,12 +23,6 @@ var url = "http://localhost:56150/GetByRowRange/5/10/";
 //     this.info = getData();
 //   }
 // };
-=======
-//import axios from "axios";
-// import { get } from "http";
-// import Axios from "https://unpkg.com/axios/dist/axios.min.js";
-var url = "http://localhost:56150/GetByRowRange/5/10/";
->>>>>>> parent of 88aeee9... Experimented and probably broke stuff, committing just to revert in GitDesktop
 
 export default {
   name: "HelloWorld",
@@ -47,7 +40,6 @@ export default {
   }
 };
 
-<<<<<<< HEAD
 // const vm = new Vue({
 //   el: "#app",
 //   data: {
@@ -135,17 +127,4 @@ var mockData = [
     LastModDate: "2019-07-05T00:00:00"
   }
 ];
-=======
-// function getData() {
-//   window.setTimeout(function() {}, 3000);
-//   let data = [];
-//   // debugger;
-//   return axios
-//     .get(url)
-//     .then(response => {
-//       return response.data;
-//     })
-//     .catch(function() {});
-// }
->>>>>>> parent of 88aeee9... Experimented and probably broke stuff, committing just to revert in GitDesktop
 </script>
