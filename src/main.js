@@ -1,12 +1,11 @@
-<script src="tableControls.js" type="text/javascript"></script>
+import Vue from 'vue'
+import App from './App.vue'
+import Axios from 'axios'
+// Vue.prototype.$http=Axios
 
-import Vue from "vue";
-import App from "./App.vue";
-import Axios from "axios";
-Vue.prototype.$http = Axios;
-
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App)
-}).$mount("#app");
+  render: h => h(App),
+}).$mount('#app')
+

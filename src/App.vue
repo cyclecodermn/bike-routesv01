@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <ApiReader msg="Welcome to TCBC Bike Routes" />
+    <HelloWorld msg="Welcome to TCBC Bike Routes" />
   </div>
 </template>
 
 <script>
-import ApiReader from "./components/ApiReader.vue";
-import TableMethods from "./components/TableMethods.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
   name: "app",
   components: {
-    ApiReader,
-    TableMethods
+    HelloWorld
   }
 };
 </script>   

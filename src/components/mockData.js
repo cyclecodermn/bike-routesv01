@@ -1,4 +1,4 @@
-const mockData = [
+var mockData = [
     {
       RouteId: 10284626,
       RouteURL: "http://ridewithgps.com/routes/10284626",
